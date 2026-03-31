@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategic Analysis: Iran War & Houthi Threat — March 31, 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0b1120;--bg2:#111827;--bg3:#1a2332;--card:#1e293b;--border:#2d3a4d;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;--red:#ef4444;--orange:#f59e0b;--green:#22c55e;--blue:#3b82f6;--purple:#a78bfa;--teal:#2dd4bf;--darkred:#991b1b;--font:'DM Sans',system-ui,-apple-system,sans-serif;--mono:'DM Mono',monospace}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6;min-height:100vh}
+.container{max-width:1200px;margin:0 auto;padding:24px 20px}
+h1{font-size:28px;font-weight:600;letter-spacing:-0.5px;margin-bottom:4px}
+h2{font-size:20px;font-weight:500;margin-bottom:12px;padding-top:32px}
+h3{font-size:16px;font-weight:500;margin-bottom:8px}
+h4{font-size:14px;font-weight:500;margin-bottom:8px}
+.subtitle{color:var(--text2);font-size:15px;margin-bottom:24px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:24px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:24px}
+.metric{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px 20px}
+.metric .label{font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px}
+.metric .value{font-size:26px;font-weight:500;letter-spacing:-0.5px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-bottom:16px}
+.tag{display:inline-block;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.5px;padding:3px 10px;border-radius:6px;margin-bottom:6px}
+.tag-red{background:rgba(239,68,68,0.15);color:var(--red)}
+.tag-orange{background:rgba(245,158,11,0.15);color:var(--orange)}
+.tag-green{background:rgba(34,197,94,0.15);color:var(--green)}
+.tag-blue{background:rgba(59,130,246,0.15);color:var(--blue)}
+.tag-purple{background:rgba(167,139,250,0.15);color:var(--purple)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+td{padding:6px 0;color:var(--text2)}
+td:last-child{text-align:right;color:var(--text);font-family:var(--mono);font-size:12px}
+tr.total{border-top:1px solid var(--border)}
+tr.total td{padding-top:10px;font-weight:500;color:var(--text)}
+.prediction{border-bottom:1px solid var(--border);padding:14px 0;cursor:pointer;transition:background 0.15s}
+.prediction:hover{background:rgba(255,255,255,0.02)}
+.pred-header{display:flex;align-items:center;gap:14px}
+.prob-badge{min-width:52px;height:52px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:600;flex-shrink:0}
+.prob-high{background:rgba(239,68,68,0.12);color:var(--red)}
+.prob-med{background:rgba(245,158,11,0.12);color:var(--orange)}
+.prob-low{background:rgba(59,130,246,0.12);color:var(--blue)}
+.pred-title{font-size:14px;font-weight:500;line-height:1.4}
+.pred-detail{font-size:13px;color:var(--text2);line-height:1.7;margin-top:8px;padding-left:66px;display:none}
+.pred-arrow{font-size:10px;color:var(--text3);transition:transform 0.2s;margin-left:auto;flex-shrink:0}
+.slider-row{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.slider-row label{font-size:13px;color:var(--text2);min-width:200px}
+.slider-row input[type=range]{flex:1;accent-color:var(--blue);height:4px}
+.slider-row .val{font-size:14px;font-weight:500;min-width:44px;text-align:right;font-family:var(--mono)}
+.rec{border-radius:10px;padding:16px 20px;margin-bottom:10px;border-left:4px solid}
+.rec-red{background:rgba(239,68,68,0.06);border-color:var(--red)}
+.rec-orange{background:rgba(245,158,11,0.06);border-color:var(--orange)}
+.rec-blue{background:rgba(59,130,246,0.06);border-color:var(--blue)}
+.rec-green{background:rgba(34,197,94,0.06);border-color:var(--green)}
+.rec .rec-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px}
+.rec p{font-size:14px;color:var(--text2);line-height:1.6}
+.chart-wrap{position:relative;width:100%;height:340px;margin:20px 0 32px}
+.cost-ratio{background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:8px;padding:10px 14px;margin-top:10px;text-align:center}
+.cost-ratio span{color:var(--red);font-weight:600;font-size:13px}
+.header-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 0 6px;border-bottom:2px solid var(--blue);margin-bottom:20px;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:1px;color:var(--text3)}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-size:11px;color:var(--text3);line-height:1.6}
+.section-divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:32px 0}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.card,.metric,.prediction,.rec{animation:fadeIn 0.4s ease-out both}
+.prediction:nth-child(2){animation-delay:0.05s}.prediction:nth-child(3){animation-delay:0.1s}.prediction:nth-child(4){animation-delay:0.15s}
+.prediction:nth-child(5){animation-delay:0.2s}.prediction:nth-child(6){animation-delay:0.25s}
+@media(max-width:640px){h1{font-size:22px}.grid4{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.slider-row{flex-wrap:wrap}.slider-row label{min-width:100%}}
+@media print{body{background:#fff;color:#1a1a1a}.card,.metric{border-color:#ddd;background:#f9f9f9}canvas{max-height:250px!important}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header-bar">
+<span>Strategic intelligence analysis</span>
+<span>March 31, 2026 — Day 31 of the Iran War</span>
+</div>
+
+<h1>The next 6 weeks: predictions, costs, and recommendations</h1>
+<p class="subtitle">Independent analytical assessment derived from open-source intelligence. Not affiliated with any government agency.</p>
+
+<div class="grid4">
+<div class="metric"><div class="label">Brent crude</div><div class="value">~$110<span style="font-size:14px;color:var(--text3)">/bbl</span></div></div>
+<div class="metric"><div class="label">Strait of Hormuz</div><div class="value" style="color:var(--red)">Closed</div></div>
+<div class="metric"><div class="label">Bab el-Mandeb</div><div class="value" style="color:var(--orange)">Threatened</div></div>
+<div class="metric"><div class="label">War duration</div><div class="value">Day 31</div></div>
+</div>
+
+<div class="section-divider"></div>
+
+<h2 style="padding-top:0">My 6 predictions</h2>
+<p style="color:var(--text3);font-size:13px;margin-bottom:16px">Click each prediction to expand the reasoning behind it.</p>
+<div class="card" id="predictions-container"></div>
+
+<div class="section-divider"></div>
+
+<h2>Scenario model</h2>
+<p style="color:var(--text3);font-size:13px;margin-bottom:16px">Adjust parameters to model the economic impact of different conflict trajectories. Results update in real time.</p>
+
+<div class="card">
+<div class="slider-row">
+<label>Hormuz closure duration (weeks)</label>
+<input type="range" min="1" max="24" value="8" step="1" id="s-hormuz" oninput="updateModel()">
+<span class="val" id="v-hormuz">8</span>
+</div>
+<div class="slider-row">
+<label>Bab el-Mandeb disruption level</label>
+<input type="range" min="0" max="100" value="30" step="5" id="s-bab" oninput="updateModel()">
+<span class="val" id="v-bab">30%</span>
+</div>
+<div class="slider-row">
+<label>SPR release rate (M bbl/day)</label>
+<input type="range" min="0" max="5" value="2" step="0.5" id="s-spr" oninput="updateModel()">
+<span class="val" id="v-spr">2.0</span>
+</div>
+<div class="slider-row">
+<label>Saudi Yanbu reroute capacity</label>
+<input type="range" min="0" max="6" value="4.5" step="0.5" id="s-yanbu" oninput="updateModel()">
+<span class="val" id="v-yanbu">4.5</span>
+</div>
+</div>
+
+<div class="grid4" id="model-out">
+<div class="metric"><div class="label">Estimated oil price</div><div class="value" id="m-oil">$128/bbl</div></div>
+<div class="metric"><div class="label">Net supply loss</div><div class="value" id="m-supply">-6.2M</div></div>
+<div class="metric"><div class="label">US GDP impact</div><div class="value" id="m-gdp">-0.5%</div></div>
+<div class="metric"><div class="label">EU recession risk</div><div class="value" id="m-eu">45%</div></div>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>Threat probability forecast</h2>
+<p style="color:var(--text3);font-size:13px;margin-bottom:4px">My estimated probabilities for four scenarios over the next 8 weeks.</p>
+<div class="chart-wrap"><canvas id="probChart"></canvas></div>
+
+<div class="section-divider"></div>
+
+<h2>Oil price scenarios</h2>
+<p style="color:var(--text3);font-size:13px;margin-bottom:4px">Actual Brent crude trajectory through Day 31, with three forward-looking scenario forecasts.</p>
+<div class="chart-wrap"><canvas id="oilChart"></canvas></div>
+
+<div class="section-divider"></div>
+
+<h2>Cost analysis: defending Bab el-Mandeb</h2>
+<p style="color:var(--text3);font-size:13px;margin-bottom:16px">The fundamental cost asymmetry that makes a purely defensive posture financially untenable.</p>
+
+<div class="grid2">
+<div class="card">
+<h4 style="color:var(--blue)">US defensive costs (per month)</h4>
+<table>
+<tr><td>SM-6 interceptors (~60/mo at $4.3M ea)</td><td>$258M</td></tr>
+<tr><td>SM-2 interceptors (~40/mo at $2M ea)</td><td>$80M</td></tr>
+<tr><td>CSG operational tempo</td><td>$65M</td></tr>
+<tr><td>MQ-9 Reaper losses (~3/mo at $32M ea)</td><td>$96M</td></tr>
+<tr><td>Tomahawk strikes (~50/mo at $2.5M ea)</td><td>$125M</td></tr>
+<tr class="total"><td>Estimated monthly total</td><td style="font-size:15px">~$624M</td></tr>
+</table>
+</div>
+<div class="card">
+<h4 style="color:var(--red)">Houthi attack costs (per month)</h4>
+<table>
+<tr><td>Shahed-136 drones (~80/mo at $30K ea)</td><td>$2.4M</td></tr>
+<tr><td>Anti-ship ballistic missiles (~15/mo)</td><td>$4.5M</td></tr>
+<tr><td>Cruise missiles (~10/mo at $200K ea)</td><td>$2.0M</td></tr>
+<tr><td>USVs / explosive boats (~5/mo)</td><td>$0.5M</td></tr>
+<tr><td>C2, logistics, personnel</td><td>$1.0M</td></tr>
+<tr class="total"><td>Estimated monthly total</td><td style="font-size:15px;color:var(--red)">~$10.4M</td></tr>
+</table>
+<div class="cost-ratio"><span>Cost ratio: 60:1 in the Houthis' favor — the central strategic problem</span></div>
+</div>
+</div>
+
+<h3 style="margin-top:8px">Target categories and key equipment</h3>
+<div class="card" style="overflow-x:auto">
+<table>
+<tr style="border-bottom:1px solid var(--border)"><td style="color:var(--text);font-weight:500">Category</td><td style="color:var(--text);font-weight:500;text-align:left">Targets</td><td style="color:var(--text);font-weight:500;text-align:left">Strike platform</td><td style="color:var(--text);font-weight:500">Est. cost</td></tr>
+<tr><td style="color:var(--red)">A: Missile storage</td><td style="text-align:left">Sa'dah underground, Sana'a outskirts</td><td style="text-align:left">B-2 (GBU-57 MOP), Tomahawk</td><td>$50-80M/pkg</td></tr>
+<tr><td style="color:var(--orange)">B: Drone launch</td><td style="text-align:left">6+ fixed sites, mobile TELs</td><td style="text-align:left">F/A-18E/F (JDAM), MQ-9 (Hellfire)</td><td>$15-30M/pkg</td></tr>
+<tr><td style="color:var(--orange)">C: Radar / C2</td><td style="text-align:left">S-75, Buk-M2, mobile comms</td><td style="text-align:left">EA-18G (SEAD), Tomahawk</td><td>$20-40M/pkg</td></tr>
+<tr><td style="color:var(--text3)">D: Port infra</td><td style="text-align:left">Hodeidah cranes, Saleef fuel</td><td style="text-align:left">Tomahawk, JDAM</td><td>$30-60M/pkg</td></tr>
+<tr><td style="color:var(--purple)">E: HVT (persons)</td><td style="text-align:left">al-Houthi, al-Madani, IRGC-QF</td><td style="text-align:left">MQ-9 (Hellfire), F/A-18 (SDB)</td><td>$5-15M/op</td></tr>
+<tr><td style="color:var(--teal)">F: Cyber / non-kinetic</td><td style="text-align:left">Drone nav, missile fire control</td><td style="text-align:left">CYBERCOM CMF</td><td>$2-5M/op</td></tr>
+</table>
+</div>
+
+<div class="section-divider"></div>
+
+<h2>What I would recommend</h2>
+<p style="color:var(--text3);font-size:13px;margin-bottom:16px">Four actions in priority order, plus one thing to absolutely avoid.</p>
+
+<div id="recs-container"></div>
+
+<div class="section-divider"></div>
+
+<h2>The bottom line</h2>
+<div class="card" style="border-color:var(--blue);border-width:2px">
+<p style="font-size:15px;line-height:1.7;color:var(--text)">
+The Houthis' one-month strategic pause is the most important data point in this analysis. It proves three things: they can be deterred, they make rational survival calculations, and they are <em>not</em> simply an Iranian puppet that activates on command. That pause is a diplomatic opening — but it's closing. Every day without engagement through the Omani channel increases the probability that the Houthis will resume Red Sea attacks, creating an unprecedented dual-chokepoint crisis that could push oil past $170/barrel and trigger a global recession.
+</p>
+<p style="font-size:15px;line-height:1.7;color:var(--text);margin-top:12px">
+The 60:1 cost asymmetry means the US cannot defend its way out of this problem. The only sustainable solution is a negotiated framework that keeps Bab el-Mandeb open — and the only party that can broker that framework is Oman. The window is 4-6 weeks. After that, we're in a different world.
+</p>
+</div>
+
+<div class="footer">
+<p><strong>Sources:</strong> Wikipedia, ACLED, CFR Global Conflict Tracker, Bloomberg, EIA, IEA, Dallas Fed, CNBC, PBS NewsHour, Al Jazeera, Times of Israel, Reuters, AP News, NPR, Axios, Britannica, UN Security Council, House of Commons Library, FDD Long War Journal, ISW, Global Security Review, The National, MARAD.</p>
+<p style="margin-top:6px"><strong>Disclaimer:</strong> This is a retroactive simulation exercise prepared for academic/educational purposes. Predictions reflect analytical reasoning applied to publicly available information, not intelligence holdings. All cost estimates are unclassified approximations from open sources. AI assistance: Claude Opus 4.6, Anthropic.</p>
+</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const predictions = [
+  {t:"Houthis will attack Red Sea shipping by mid-May",p:75,cls:"prob-high",d:"The March 28 Israel strike was step one of a graduated escalation. Historical pattern: Houthis always escalated from Israel attacks to shipping attacks within 2-6 weeks in prior cycles (November 2023, March 2025). With the Iran war providing both motivation and cover, and IRGC resupply disrupted making each missile more valuable as a coercive tool, I expect them to prioritize high-value shipping targets rather than the indiscriminate volume attacks of 2024. The Houthi deputy information minister's statement that closing Bab el-Mandeb is 'among our options' is a deliberate signal, not rhetoric — the Houthis have historically followed through on public threats."},
+  {t:"Strait of Hormuz will NOT reopen before mid-May",p:80,cls:"prob-high",d:"Iran achieved the closure through cheap drones — not a conventional naval blockade. The insurance-driven shutdown is self-reinforcing: even if the US destroys every IRGC coastal launcher, shipping companies won't transit until insurers are satisfied the passage is safe. The US military campaign (began March 19) is necessary but not sufficient. Iran's asymmetric advantage — mines, fast boats, and shore-based missiles along 180km of coastline on three sides of a 34km-wide strait — makes this a slow, grinding operation. The 1988 Operation Praying Mantis precedent took weeks, and Iran's capabilities are vastly more sophisticated now."},
+  {t:"Oil will spike above $130/bbl if dual chokepoint materializes",p:60,cls:"prob-med",d:"If the Houthis disrupt even 20-30% of Bab el-Mandeb traffic while Hormuz remains closed, Brent will likely surge past $130. The Saudi Yanbu pipeline reroute (~4.5M bbl/day capacity) is the only viable alternative for Gulf exports — disrupting it removes the last safety valve. Bloomberg models show $170 is plausible in a worst case. The key variable is whether Saudi Arabia can negotiate a Houthi exemption for its Red Sea tankers, which Riyadh is almost certainly attempting through back-channels. The Dallas Fed's model projects WTI at $98/bbl with one quarter of disruption — and that assumes Bab el-Mandeb stays open."},
+  {t:"A ceasefire framework will emerge by late April",p:55,cls:"prob-med",d:"Not because anyone wants peace, but because the economic pain is becoming unsustainable for all parties. US gas prices have eclipsed $4/gallon. Europe faces a second energy crisis with gas storage at 30%. Pakistan and Bangladesh have declared 4-day work weeks. The 15-point US peace plan reported on March 31 suggests diplomatic pressure is building. But any ceasefire will be partial and fragile — it may cover the Strait of Hormuz without resolving the Houthi dimension, leaving Bab el-Mandeb as a separate negotiation. Iran's calculus: they've absorbed enormous military damage but gained the leverage of Hormuz. A ceasefire that reopens Hormuz without further strikes is a win they can sell domestically."},
+  {t:"Abdul-Malik al-Houthi will NOT be killed",p:90,cls:"prob-high",d:"He has been in hiding continuously since 2004 — over two decades. Israeli intelligence, with arguably the world's most sophisticated SIGINT and HUMINT apparatus in the Middle East, has been actively trying to locate him. The August 2025 cabinet strike proved Israel can hit Houthi gatherings in Sanaa with devastating precision — but al-Houthi wasn't there, and he won't be at any future gathering. He communicates exclusively through in-person couriers, has no electronic signature, moves between rural locations in northern Yemen's mountainous terrain, and has a network of loyalists who have protected him through a decade of civil war. He is functionally untouchable with current intelligence capabilities."},
+  {t:"The Iran war will NOT end in the next 6 weeks",p:70,cls:"prob-high",d:"Despite 75%+ destruction of Iran's ballistic missile launchers, the regime has not collapsed. Mojtaba Khamenei's succession has been accepted by the IRGC. Iran retains the ability to keep Hormuz closed through asymmetric means — cheap drones and mines don't require the advanced missile systems that have been destroyed. The IRGC is a parallel state with its own economy, military, and governance structures — it can sustain low-level resistance for months or years. ACLED's March 2026 assessment: the Islamic Republic is 'more likely to continue fighting than to concede.' The war is far more likely to settle into grinding attrition than to end with a decisive outcome in either direction."}
+];
+
+const pc = document.getElementById('predictions-container');
+predictions.forEach((p,i) => {
+  const d = document.createElement('div');
+  d.className = 'prediction';
+  d.innerHTML = `<div class="pred-header"><div class="prob-badge ${p.cls}">${p.p}%</div><div class="pred-title">${p.t}</div><span class="pred-arrow" id="pa-${i}">&#9660;</span></div><div class="pred-detail" id="pd-${i}">${p.d}</div>`;
+  d.onclick = () => {
+    const det = document.getElementById('pd-'+i);
+    const arr = document.getElementById('pa-'+i);
+    const open = det.style.display !== 'block';
+    det.style.display = open ? 'block' : 'none';
+    arr.style.transform = open ? 'rotate(180deg)' : '';
+  };
+  pc.appendChild(d);
+});
+
+const recs = [
+  {label:"Immediate — within 48 hours",cls:"rec-red",lc:"var(--red)",text:"Activate the Omani diplomatic channel. Offer the Houthis restoration of the May 2025 ceasefire framework specifically covering Bab el-Mandeb freedom of navigation. The Houthis' month-long pause proves they can be deterred — but the clock is ticking. Oman brokered the original deal and maintains the only credible back-channel to both Houthi leadership and Tehran. A CIA liaison team should co-locate with the Omani Intelligence Service in Muscat within 72 hours."},
+  {label:"This week — days 1-7",cls:"rec-orange",lc:"var(--orange)",text:"Surge 2-3 additional Arleigh Burke DDGs to the southern Red Sea with full SM-6/SM-2 VLS loadout. The purpose is deterrence, not strikes. Visible Aegis presence in the Bab el-Mandeb approaches changes the Houthi risk calculus. Coordinate with Saudi Arabia on naval patrol intelligence sharing via the CAOC architecture. The USS Gerald R. Ford (currently in Crete) should be held in reserve — redeploying it to the Red Sea exposes it to the same high-tempo attacks that plagued the Eisenhower and Truman."},
+  {label:"Next 2 weeks — days 7-21",cls:"rec-blue",lc:"var(--blue)",text:"Execute CYBERCOM offensive operations against Houthi drone navigation and missile guidance systems. GPS spoofing of Shahed-136 drones causes misdirection without physical destruction and without violating the May 2025 ceasefire. This is the highest-value non-kinetic option: extremely difficult to attribute, exploits the fact that Houthi drone stocks are now finite with IRGC resupply disrupted by the Iran war, and degrades anti-ship capability at a cost of $2-5M per operation versus $258M/month in SM-6 interceptors."},
+  {label:"Medium-term — days 21-45",cls:"rec-green",lc:"var(--green)",text:"Seek a Supplemental Memorandum of Notification for direct CIA back-channel engagement with Abdul-Malik al-Houthi's inner circle through Saudi GIP intermediaries. Objective: assess whether al-Houthi will trade Bab el-Mandeb neutrality for US guarantees against resumed strikes on Yemen plus Saudi economic concessions. His survival calculus — demonstrated by the strategic pause — suggests openness. This opportunity is time-limited and will expire as the Iran war drives escalation pressure."},
+  {label:"Do NOT do this",cls:"rec-red",lc:"var(--red)",text:"Do NOT resume large-scale airstrikes on Yemen. Operation Rough Rider (1,100+ strikes, $750M+, 2 aircraft lost, 7 MQ-9 drones lost, 224 civilian casualties per Airwars) did not achieve its stated objectives. The Houthis' own negotiator said the US 'backed down.' Administration officials privately acknowledged the campaign failed to achieve air superiority. Repeating this during an ongoing Iran war would open a second active front, further strain munition stocks already depleted by Operation Epic Fury, and destroy the diplomatic framework that has kept Bab el-Mandeb shipping open for 10 months. The 60:1 cost asymmetry makes sustained kinetic action financially untenable."}
+];
+
+const rc = document.getElementById('recs-container');
+recs.forEach(r => {
+  const d = document.createElement('div');
+  d.className = 'rec ' + r.cls;
+  d.innerHTML = `<div class="rec-label" style="color:${r.lc}">${r.label}</div><p>${r.text}</p>`;
+  rc.appendChild(d);
+});
+
+function updateModel() {
+  const hw = +document.getElementById('s-hormuz').value;
+  const bp = +document.getElementById('s-bab').value;
+  const sr = +document.getElementById('s-spr').value;
+  const yn = +document.getElementById('s-yanbu').value;
+  document.getElementById('v-hormuz').textContent = hw;
+  document.getElementById('v-bab').textContent = bp + '%';
+  document.getElementById('v-spr').textContent = sr.toFixed(1);
+  document.getElementById('v-yanbu').textContent = yn.toFixed(1);
+  const hormuzLoss = 20;
+  const babLoss = 12 * (bp / 100);
+  const netLoss = Math.max(0, hormuzLoss + babLoss - sr - yn);
+  const oil = Math.round(75 + netLoss * 3.2 + (hw > 8 ? (hw - 8) * 2.5 : 0));
+  const gdp = (netLoss * 0.04 + (hw > 12 ? 0.3 : 0)).toFixed(1);
+  const eu = Math.min(95, Math.round(20 + netLoss * 3 + bp * 0.2));
+  document.getElementById('m-oil').textContent = '$' + oil + '/bbl';
+  document.getElementById('m-oil').style.color = oil > 150 ? 'var(--red)' : oil > 120 ? 'var(--orange)' : 'var(--text)';
+  document.getElementById('m-supply').textContent = '-' + netLoss.toFixed(1) + 'M';
+  document.getElementById('m-gdp').textContent = '-' + gdp + '%';
+  document.getElementById('m-gdp').style.color = gdp > 1 ? 'var(--red)' : gdp > 0.5 ? 'var(--orange)' : 'var(--text)';
+  document.getElementById('m-eu').textContent = eu + '%';
+  document.getElementById('m-eu').style.color = eu > 60 ? 'var(--red)' : eu > 40 ? 'var(--orange)' : 'var(--text)';
+}
+updateModel();
+
+const cOpts = {responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#94a3b8',font:{size:11,family:'DM Sans'}}}},scales:{y:{ticks:{color:'#64748b'},grid:{color:'rgba(255,255,255,0.05)'}},x:{ticks:{color:'#64748b',maxRotation:45},grid:{color:'rgba(255,255,255,0.03)'}}}};
+
+new Chart(document.getElementById('probChart'), {
+  type:'line',
+  data:{
+    labels:['Wk5 (now)','Wk6','Wk7','Wk8','Wk9','Wk10','Wk11','Wk12'],
+    datasets:[
+      {label:'Red Sea shipping attacks',data:[25,40,55,65,72,78,82,85],borderColor:'#f59e0b',backgroundColor:'rgba(245,158,11,0.08)',fill:true,tension:0.3,pointRadius:3},
+      {label:'Bab el-Mandeb closure attempt',data:[10,20,35,45,52,58,62,65],borderColor:'#991b1b',backgroundColor:'rgba(153,27,27,0.08)',fill:true,tension:0.3,pointRadius:3},
+      {label:'Ceasefire framework',data:[15,25,35,45,55,50,40,35],borderColor:'#22c55e',backgroundColor:'rgba(34,197,94,0.05)',fill:true,tension:0.3,pointRadius:3},
+      {label:'Hormuz reopened',data:[2,5,10,15,20,30,35,40],borderColor:'#3b82f6',borderDash:[5,3],tension:0.3,pointRadius:2}
+    ]
+  },
+  options:{...cOpts,scales:{...cOpts.scales,y:{...cOpts.scales.y,min:0,max:100,title:{display:true,text:'Probability (%)',color:'#64748b'}}},plugins:{...cOpts.plugins,title:{display:true,text:'Escalation probability: 8-week forecast',color:'#e2e8f0',font:{size:15,weight:'500',family:'DM Sans'}}}}
+});
+
+new Chart(document.getElementById('oilChart'), {
+  type:'line',
+  data:{
+    labels:['Pre-war','Day 1','Day 3','Day 7','Day 10','Day 14','Day 21','Day 28','Day 31','Wk6','Wk8','Wk10','Wk12'],
+    datasets:[
+      {label:'Brent crude (actual)',data:[74,82,92,102,120,126,112,108,110,null,null,null,null],borderColor:'#e2e8f0',borderWidth:2.5,pointRadius:3,pointBackgroundColor:'#e2e8f0'},
+      {label:'Base case forecast',data:[null,null,null,null,null,null,null,null,110,115,120,118,112],borderColor:'#3b82f6',borderDash:[5,3],pointRadius:2},
+      {label:'Dual chokepoint scenario',data:[null,null,null,null,null,null,null,null,110,130,155,170,165],borderColor:'#991b1b',borderDash:[3,3],pointRadius:2,backgroundColor:'rgba(153,27,27,0.06)',fill:true},
+      {label:'Ceasefire scenario',data:[null,null,null,null,null,null,null,null,110,105,95,88,82],borderColor:'#22c55e',borderDash:[5,3],pointRadius:2}
+    ]
+  },
+  options:{...cOpts,spanGaps:false,scales:{...cOpts.scales,y:{...cOpts.scales.y,min:60,max:180,title:{display:true,text:'$/barrel',color:'#64748b'}}},plugins:{...cOpts.plugins,title:{display:true,text:'Oil price: actual trajectory + 3 scenario forecasts',color:'#e2e8f0',font:{size:15,weight:'500',family:'DM Sans'}}}}
+});
+</script>
+</body>
+</html>
